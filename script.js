@@ -13,7 +13,7 @@ function closeMenu() {
     let myMenu = document.getElementById("myMenu");
     if (myMenu.className === 'menu-active') {
         myMenu.className = 'menu';
-        let menuButton = document.querySelector(".menu-button"); 
+        let menuButton = document.querySelector(".menu-button");
         if (menuButton) {
             menuButton.classList.remove("change");
         }
@@ -34,7 +34,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 const elementPosition = target.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-                smoothScrollTo(offsetPosition, 800); 
+                smoothScrollTo(offsetPosition, 800);
             }
         }
     });
