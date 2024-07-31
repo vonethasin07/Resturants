@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="menubar.css">
+    <link rel="stylesheet" href="conProduct.css">
+    <link rel="stylesheet" href="loading.css">
+    <title>Menu</title>
+</head>
+
+<body>
+    <!-- Start MenuBar -->
+    <nav>
+        <div class="con">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1 id="Res">Snow Bar</h1>
+                </div>
+                <ul class="menu" id="myMenu">
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn" id="lan">ລາວ <i class="fa fa-angle-down"></i></i></a>
+                        <div class="dropdown-content">
+                            <a href="#" onclick="laos();">LA</a>
+                            <a href="#" onclick="English();">EN</a>
+                        </div>
+                    </li>
+                    <li><a href="#section1" class="items" id="drink">ເຄື່ອງດື່ມ</a></li>
+                    <li><a href="#section2" class="items" id="rice">ປະເພດເຂົ້າ</a></li>
+                    <li><a href="#section3" class="items" id="fried">ປະເພດຈືນ</a></li>
+                    <li><a href="#section4" class="items" id="mix">ປະເພດຕຳ</a></li>
+                    <li><a href="#section5" class="items">ປະເພດຍຳ</a></li>
+                    <li><a href="#section6" class="items">ປະເພດແກງ</a></li>
+                </ul>
+                <div class="ham-menu" onclick="menubar(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End MenuBar -->
+
+    <!-- Loading Screen -->
+    <div id="loading" style="display:none;">
+        <div class="spinner"></div>
+    </div>
+    <div id="loading-screen">
+        <div class="spinner"></div>
+        <p class="loading">Loading...</p>
+    </div>
+    <!-- Loading Screen -->
+
+    <!-- Start Price Menu ເຄື່ອງດື່ມ -->
+
+    <div class="container">
+        <h1 id="section1" class="name-drink">ເຄື່ອງດື່ມ</h1>
+        <div class="product-con">
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://carlsberg-group-2022.euwest01.umbraco.io/media/i32l5gg4/beerlao-640ml-1.png"
+                        alt="">
+                </div>
+                <div class="product-detail" id="beerLaos">ເບຍລາວ ( ແກ້ວໃຫຍ່ )</div>
+                <div class="product-price" id="priceBeerLaos">35,000 ກີບ</div>
+            </div>
+
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://asiabrewery.com/cdn/shop/products/Heineken_330mL_Bottle_Pure_Malt_Lager_New_1429265a-9d86-4ecc-ba84-7d10efc1ee33_800x.png?v=1653537366"
+                        alt="">
+                </div>
+                <div class="product-detail" id="heineken-big">ໄຮເນເກັນ ( ແກ້ວໃຫຍ່ )</div>
+                <div class="product-price" id="priceHeinekenBig">35,000 ກີບ</div>
+            </div>
+
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://asiabrewery.com/cdn/shop/products/Heineken_330mL_Bottle_Pure_Malt_Lager_New_1429265a-9d86-4ecc-ba84-7d10efc1ee33_800x.png?v=1653537366"
+                        alt="">
+                </div>
+                <div class="product-detail" id="heineken-mal">ໄຮເນເກັນ ( ແກ້ວນ້ອຍ )</div>
+                <div class="product-price" id="priceHeinekenMal">35,000 ກີບ</div>
+            </div>
+
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://qwickpick.com/wp-content/uploads/2024/04/Pepsi-Made-with-PosterMyWall.png" alt="">
+                </div>
+                <div class="product-detail" id="pepsi">ເປບຊີ</div>
+                <div class="product-price" id="pricePepsi">35,000 ກີບ</div>
+            </div>
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://inwfile.com/s-cw/hk6aom.jpg" alt="">
+                </div>
+                <div class="product-detail" id="ice">ນໍ້າກ້ອນ ( ນ້ອຍ )</div>
+                <div class="product-price" id="priceIce">15,000 ກີບ</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Price Menu ເຄື່ອງດື່ມ -->
+
+    <!-- Start Price Menu ປະເພດເຂົ້າ -->
+
+    <div class="container">
+        <h1 id="section2" class="name-menu">ປະເພດເຂົ້າ</h1>
+        <div class="product-con">
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://khinskitchen.com/wp-content/uploads/2023/02/khao-pad-08-500x375.jpg" alt="">
+                </div>
+                <div class="product-detail">ເຂົ້າພັດທະເລ</div>
+                <div class="product-price">35,000 ກີບ</div>
+            </div>
+
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://images.deliveryhero.io/image/fd-th/LH/p9gv-listing.jpg" alt="">
+                </div>
+                <div class="product-detail">ເຂົ້າພັດທະໝູ</div>
+                <div class="product-price">35,000 ກີບ</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- End Price Menu ປະເພດເຂົ້າ -->
+
+    <!-- Start Price Menu ປະເພດຈືນ -->
+
+    <div class="container">
+        <h1 id="section3" class="name-tum">ປະເພດຈືນ</h1>
+        <div class="product-con">
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://img.wongnai.com/p/1920x0/2019/08/08/b09cbc9b92e0440aa2dff6e88cad2afd.jpg" alt="">
+                </div>
+                <div class="product-detail">ຈືນດູກຂ້າງໝູ</div>
+                <div class="product-price">80,000 ກີບ</div>
+            </div>
+
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://pbs.twimg.com/media/EzbZiMYUcAY5u7Y.jpg" alt="">
+                </div>
+                <div class="product-detail">ເຟັ່ນຝ່າຍທອດ</div>
+                <div class="product-price">45,000 ກີບ</div>
+            </div>
+
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://www.tvpoolonline.com/wp-content/uploads/2018/06/AA117EF1-DD73-4962-A1C4-5268EA80EDBF.jpeg"
+                        alt="">
+                </div>
+                <div class="product-detail">ສົບເປັດທອດ</div>
+                <div class="product-price">55,000 ກີບ</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- End Price Menu ປະເພດຕຳ -->
+
+    <!-- Start Price Menu ປະເພດຕຳ -->
+
+    <div class="container">
+        <h1 id="section4" class="name-tum">ປະເພດຕຳ</h1>
+        <div class="product-con">
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://p16-va.lemon8cdn.com/tos-alisg-v-a3e477-sg/636471aec0954e52b497e27f81187ce5~tplv-tej9nj120t-origin.webp"
+                        alt="">
+                </div>
+                <div class="product-detail">ຕຳທະເລລວມ</div>
+                <div class="product-price">115,000 ກີບ</div>
+            </div>
+
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://img-global.cpcdn.com/recipes/6d5807b3d27ef6d7/400x400cq70/photo.jpg" alt="">
+                </div>
+                <div class="product-detail">ຕຳຫອຍແຄງ</div>
+                <div class="product-price">65,000 ກີບ</div>
+            </div>
+
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://p16-va.lemon8cdn.com/tos-alisg-v-a3e477-sg/b54e8942c2524646a6bd46527efc54bf~tplv-tej9nj120t-origin.webp"
+                        alt="">
+                </div>
+                <div class="product-detail">ຕຳປູມ້າ</div>
+                <div class="product-price">70,000 ກີບ</div>
+            </div>
+
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://www.ryoiireview.com/upload/article/202111/1637573772_edab7ba7e203cd7576d1200465194ea8.jpg"
+                        alt="">
+                </div>
+                <div class="product-detail">ຕຳກຸ້ງສົດ</div>
+                <div class="product-price">65,000 ກີບ</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Price Menu ປະເພດຕຳ -->
+
+    <!-- Start Price Menu ປະເພດຍຳ -->
+
+    <div class="container">
+        <h1 id="section5" class="name-yum">ປະເພດຍຳ</h1>
+        <div class="product-con">
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://www.sgethai.com/wp-content/uploads/2023/10/%E0%B8%A2%E0%B8%B3%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%A5-8_result.webp"
+                        alt="">
+                </div>
+                <div class="product-detail">ຍໍາທະເລລວມ</div>
+                <div class="product-price">115,000 ກີບ</div>
+            </div>
+
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://i.pinimg.com/originals/a4/e3/7f/a4e37f64705848e454b4b423c3ff7871.jpg" alt="">
+                </div>
+                <div class="product-detail">ຍໍາຫຍໍໝູ</div>
+                <div class="product-price">55,000 ກີບ</div>
+            </div>
+
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://many-menu.com/wp-content/uploads/2020/11/%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A333-1024x768.jpg"
+                        alt="">
+                </div>
+                <div class="product-detail">ຍໍາສັນຄໍໝູ</div>
+                <div class="product-price">65,000 ກີບ</div>
+            </div>
+
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://www.mitrpholsugar.com/wp-content/uploads/2022/01/%E0%B8%A2%E0%B8%B3%E0%B9%81%E0%B8%8B%E0%B8%A5%E0%B8%A1%E0%B9%88%E0%B8%AD%E0%B8%99-1568-%C3%97-1044.jpg"
+                        alt="">
+                </div>
+                <div class="product-detail">ຍໍາປາແຊວມ່ອນ</div>
+                <div class="product-price">110,000 ກີບ</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Price Menu ປະເພດຍຳ -->
+
+    <!-- Start Price Menu ປະເພດແກງ -->
+
+    <div class="container">
+        <h1 id="section6" class="name-kaeng">ປະເພດແກງ</h1>
+        <div class="product-con">
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://www.jmthaifood.com/wp-content/uploads/2020/01/%E0%B8%95%E0%B9%89%E0%B8%A1%E0%B8%A2%E0%B8%B3%E0%B8%81%E0%B8%B8%E0%B9%89%E0%B8%87-1.jpg"
+                        alt="">
+                </div>
+                <div class="product-detail">ຕົ້ມຍຳກຸ້ງ</div>
+                <div class="product-price">35,000 ກີບ</div>
+            </div>
+
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://www.sgethai.com/wp-content/uploads/2024/04/16042024-tom-yum-pla-nil9.webp" alt="">
+                </div>
+                <div class="product-detail">ຕົ້ມຍຳປານີນ (1 ໂຕ)</div>
+                <div class="product-price">120,000 ກີບ</div>
+            </div>
+
+            <div class="product-items">
+                <div class="product-img">
+                    <img src="https://img.wongnai.com/p/1968x0/2019/07/09/8fe7fe79bd634071883e4139edf8f098.jpg" alt="">
+                </div>
+                <div class="product-detail">ຕົ້ມຍຳທະເລ</div>
+                <div class="product-price">150,000 ກີບ</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- End Price Menu ປະເພດແກງ -->
+
+    <!-- Start Footer -->
+    <div class="footer">
+        <p class="copyright">© Copyright <strong><a href="https://www.facebook.com/Vonethasin/?locale=th_TH"
+                    class="fb">Vonethasin</a></strong>. All Rights Reserved</p>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Start Scrit -->
+
+    <script src="loading.js"></script>
+    <script src="script.js"></script>
+    <script src="LA.js"></script>
+    <script src="en.js"></script>
+
+    <!-- End Script -->
+
+</body>
+
+</html>

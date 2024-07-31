@@ -1,0 +1,100 @@
+/* Spinner style */
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.934);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+ /* Spinner style */ 
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 1rem;
+
+}
+
+.name-drink {
+    font-family: Phetsarath OT;
+    margin-top: 100px;
+}
+
+.name-menu {
+    font-family: Phetsarath OT;
+}
+
+.name-tum {
+    font-family: Phetsarath OT;
+}
+
+.name-yum {
+    font-family: Phetsarath OT;
+}
+
+.name-kaeng {
+    font-family: Phetsarath OT;
+}
+
+.product-con {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-row-gap: 0.5rem;
+    grid-column-gap: 0.5rem;
+}
+
+.product-items {
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+    transition: 0.5s;
+    outline: 1px solid white;
+    cursor: pointer;
+}
+
+.product-items:hover {
+    outline: 1px solid rgb(0, 67, 235);
+}
+
+.product-detail {
+    padding: 1rem;
+    font-family: Phetsarath OT;
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.product-price {
+    padding: 1rem;
+    font-family: Phetsarath OT;
+    font-size: 22px;
+}
+
+.product-img img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    .name-drink {
+        margin-top: 100px;
+    }
+
+    .product-con {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+}
